@@ -10,7 +10,9 @@ public class Stream_API_1 {
 		
 //		System.out.println(values.stream().map(i->i*2).reduce(0,(c,e)->c+e));
 		
-		System.out.println(values.stream().map(i->i*2).reduce(0,Integer::sum));
+//		System.out.println(values.stream().map(i->i*2).reduce(0,Integer::sum));
+		
+		System.out.println(values.stream().filter(i->i%2==0).reduce(0,(c,e)->c+e));
 
 	}
 
